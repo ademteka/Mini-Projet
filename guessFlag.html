@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Flag</title>
+  <link rel="stylesheet" href="style/guess.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+
+
+  <div class="container">
+    <header>
+      <div class="switch-container">
+        <label class="switch">
+          <input type="checkbox" id="switch-container">
+          <span class="slider-round"></span>
+        </label>
+      </div>
+    </header>
+    <div class="butto">
+      <label class="buttons">
+        <input type="button" id="button-container" value="Search" onclick="window.location.href='index.html'">
+      </label>
+      <label class="buttons">
+        <input type="button" id="button-container" value="Compare" onclick="window.location.href='compareFlags.html'">
+      </label>
+    </div>
+    <div class="button">
+      <input type="button" id="generateButton" value="Generate Random Flag" onclick="generateRandomFlagForGuess()">
+    </div>
+    
+    <div id="guessFlagContainer" class="flag-container"></div>
+    
+    <div class="search-box">
+      <input type="text" id="guessCountryInput" class="input-search" placeholder="Guess the Country...">
+      <button class="btn-guess" onclick="checkGuess()">Guess</button>
+    </div>
+    
+    <div id="guessResult" class="guess-result"></div>
+  </div>
+
+  <script src="scripts/guessFlagScript.js"></script>
+</body>
+</html>

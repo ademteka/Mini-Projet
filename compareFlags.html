@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Flags</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style/compare.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="button">
+      <label class="buttons">
+        <input type="button" id="button-container" value="Search" onclick="window.location.href='index.html'">
+      </label>
+      <label class="buttons">
+        <input type="button" id="button-container" value="GuessFlag" onclick="window.location.href='guessFlag.html'">
+      </label>
+    </div>
+  </div>
+</header>
+<section id="compareFlagsSection">
+  <h2>Compare Flags</h2>
+  <form id="compareForm">
+    <input type="text" id="firstCountryInput" placeholder="First Country" autocomplete="off">
+    <input type="text" id="secondCountryInput" placeholder="Second Country" autocomplete="off">
+    <button type="submit">Compare</button>
+  </form>
+  <div id="compareContainer">
+    <div id="firstCountryDetails" class="country-details"></div>
+    <div id="secondCountryDetails" class="country-details"></div>
+  </div>
+</section>
+<script src="scripts/scriptc.js"></script>
+</body>
+</html>
